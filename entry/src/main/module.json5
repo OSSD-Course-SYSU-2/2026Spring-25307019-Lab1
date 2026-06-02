@@ -1,12 +1,9 @@
 {
   "module": {
-    "name": "entry",
-    "type": "entry",
-    "description": "$string:module_desc",
-    "mainElement": "EntryAbility",
-    "deviceTypes": [
-      "phone"
-    ],
+  "name": "entry",
+  "type": "entry",
+  "deviceTypes": ["phone","tablet","tv"], // 多设备部署核心配置
+  "mainElement": "EntryAbility",
     "deliveryWithInstall": true,
     "installationFree": false,
     "pages": "$profile:main_pages",
@@ -14,6 +11,7 @@
       {
         "name": "EntryAbility",
         "srcEntry": "./ets/entryability/EntryAbility.ets",
+        "continuable": true,
         "description": "$string:EntryAbility_desc",
         "icon": "$media:layered_image",
         "label": "$string:EntryAbility_label",
@@ -44,6 +42,13 @@
             "resource": "$profile:backup_config"
           }
         ],
+        ,"requestPermissions": [
+    {
+        "name": "ohos.permission.DISTRIBUTED_DATASYNC",
+        "reason": "跨设备应用自由流转",
+        "usedScene":{"abilities":["EntryAbility"],"when":"inuse"}
+    }
+]
       }
     ]
   }
