@@ -8,6 +8,8 @@
 
 ## 截图
 
+### 手机端
+
 | 烘焙主页 | 摇一摇抽奖 | 烘焙工坊 |
 |:---:|:---:|:---:|
 | ![烘焙主页](screenshots/home.png) | ![摇一摇抽奖](screenshots/lottery_popup.png) | ![烘焙工坊](screenshots/bakery.png) |
@@ -15,6 +17,12 @@
 | 消消乐开始 | 消消乐进行中 | 消消乐通关 |
 |:---:|:---:|:---:|
 | ![消消乐开始](screenshots/match_game_start.png) | ![消消乐进行中](screenshots/match_game_playing.png) | ![消消乐通关](screenshots/match_game_complete.png) |
+
+### 平板端（多端部署 & 跨设备流转）
+
+| 平板-消消乐 | 平板-抽奖弹窗 | 平板-消消乐通关 |
+|:---:|:---:|:---:|
+| ![平板消消乐](screenshots/tablet_match_game_start.png) | ![平板抽奖弹窗](screenshots/tablet_lottery_popup.png) | ![平板消消乐通关](screenshots/tablet_match_game_complete.png) |
 
 ## 功能特性
 
@@ -40,10 +48,12 @@
 - 每次翻开 2 张，配对成功则锁定，失败则翻回
 - 全部配对成功后获得 30 可可粉奖励，返回烘焙主页
 
-### 4. 多端部署 & 跨设备流转
+### 4. 多端部署 & 跨设备自由流转
 
-- 支持 Phone / Tablet / TV 三种设备类型
-- 配置了 `DISTRIBUTED_DATASYNC` 权限，支持跨设备应用自由流转
+- 支持 Phone / Tablet / TV 三种设备类型部署运行
+- 配置 `deviceTypes: ["phone", "tablet", "tv"]` 实现一次开发多端适配
+- 配置 `DISTRIBUTED_DATASYNC` 权限，支持跨设备应用自由流转
+- Ability 配置 `continuable: true`，支持应用在设备间无缝迁移
 
 ## 项目结构
 
