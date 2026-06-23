@@ -8,9 +8,9 @@
 
 ## 截图
 
-| 烘焙主页 | 摇一摇抽奖 |
-|:---:|:---:|
-| ![烘焙主页](screenshots/home.png) | ![摇一摇抽奖](screenshots/lottery_popup.png) |
+| 烘焙主页 | 摇一摇抽奖 | 烘焙工坊 |
+|:---:|:---:|:---:|
+| ![烘焙主页](screenshots/home.png) | ![摇一摇抽奖](screenshots/lottery_popup.png) | ![烘焙工坊](screenshots/bakery.png) |
 
 | 消消乐开始 | 消消乐进行中 | 消消乐通关 |
 |:---:|:---:|:---:|
